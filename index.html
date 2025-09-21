@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SheLeadsTech Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <h1>SheLeadsTech Hub</h1>
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#scholarships">Scholarships</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#resources">Resources</a>
+      <a href="#chatbot">Chatbot</a>
+      <button id="darkToggle"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2> Empowering Women in Tech</h2>
+    <p>Let’s learn, lead, and succeed—together.</p>
+    <a href="#events" class="cta-btn">See What's Happening</a>
+  </section>
+
+  <main class="container">
+    <section id="events" class="card">
+      <h2><i class="fa-solid fa-calendar-days"></i> Upcoming Events</h2>
+      <ul id="eventsList"></ul>
+    </section>
+
+   
+    <section id="scholarships" class="card">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Scholarships</h2>
+      <ul id="scholarshipsList"></ul>
+    </section>
+
+    
+    <section id="mentorship" class="card">
+      <h2><i class="fa-solid fa-user-friends"></i> Join Mentorship</h2>
+     
+      <form id="mentorForm">
+        <input id="name" placeholder="Your Name" required />
+        <select id="role">
+          <option disabled selected>Select Role</option>
+          <option>Mentor (AI)</option>
+          <option>Mentor (Web Dev)</option>
+          <option>Mentor (Cybersecurity)</option>
+          <option>Mentee (AI)</option>
+          <option>Mentee (Web Dev)</option>
+          <option>Mentee (Cybersecurity)</option>
+        </select>
+        <button type="submit">Join</button>
+      </form>
+    </section>
+
+    
+    
+<section id="resources" class="card">
+  <h2><i class="fa-solid fa-book-open"></i> Resources</h2>
+
+  <h3>Communities 🌐</h3>
+  <ul>
+    <li><a href="https://developers.google.com/womentechmakers" target="_blank">Google Women Techmakers</a></li>
+    <li><a href="https://anitab.org/" target="_blank">AnitaB.org (Grace Hopper Celebration)</a></li>
+  </ul>
+
+  <h3> Learning 📖</h3>
+  <ul>
+    <li><a href="https://www.freecodecamp.org/news/tag/women-in-tech/" target="_blank">FreeCodeCamp Women in Tech</a></li>
+    <li><a href="https://towardsdatascience.com/tagged/ai-ethics" target="_blank">AI Ethics Articles</a></li>
+  </ul>
+
+  <h3>News 📰 </h3>
+  <ul>
+    <li><a href="https://techcrunch.com/tag/women-in-tech/" target="_blank">TechCrunch Women in Tech</a></li>
+    <li><a href="https://dev.to/t/womenintech" target="_blank">DEV.to Women in Tech</a></li>
+  </ul>
+
+  <h3> Forums 💬</h3>
+  <ul>
+    <li><a href="https://www.reddit.com/r/WomenInTech/" target="_blank">Reddit r/WomenInTech</a></li>
+    <li><a href="https://meta.stackoverflow.com/questions/tagged/women-in-tech" target="_blank">Stack Overflow – Women in STEM</a></li>
+  </ul>
+
+  <h3>Podcasts 🎧 </h3>
+  <ul>
+    <li><a href="https://www.womenintechshow.com/" target="_blank">The Women in Tech Show</a></li>
+    <li><a href="https://girlgeek.io/podcast/" target="_blank">Girl Geek X Podcast</a></li>
+  </ul>
+</section>
+
+
+    <section id="chatbot" class="card">
+      <h2><i class=""></i> Chatbot</h2>
+      <div id="chatbox">
+        <div id="chatlog"></div>
+        <input id="chatInput" placeholder="Ask about events, scholarships..." />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 SheLeadsTech Hub — Submission for GDGC
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

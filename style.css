@@ -1,0 +1,166 @@
+:root {
+  --bg: #f9f9fb;
+  --text: #222;
+  --card: #fff;
+  --accent: #7b2cbf;
+  --accent2: #4361ee;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card: #1e1e1e;
+}
+
+.navbar {
+  background: var(--card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+.navbar nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #fff;
+  color: var(--accent);
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background: var(--accent2);
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  /* lil dev touch */
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2 i {
+  margin-right: 0.5rem;
+  color: var(--accent);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: .5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  padding: .6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background: var(--accent2);
+}
+
+/* Chatbox */
+#chatbox {
+  border: 1px solid #121212;
+  border-radius: 8px;
+  padding: .5rem;
+}
+#chatlog {
+  height: 180px;
+  overflow-y: auto;
+  margin-bottom: .5rem;
+  background: #fafafa;
+  padding: .5rem;
+  border-radius: 6px;
+}
+#chatlog p {
+  margin: .3rem 0;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  padding: .8rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(20px); }
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--card);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+#chatlog p strong {
+  color: var(--accent2); 
+}
+
+body.dark #chatlog p strong {
+  color: var(--accent); 
+}
